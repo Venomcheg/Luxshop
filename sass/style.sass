@@ -1,0 +1,24 @@
+@mixin font($font_name, $file_name, $weight, $style) 
+	@font-face 
+		font-family: $font_name
+		font-display: swap
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2")
+		font-weight: #{$weight}
+		font-style: #{$style}
+@import "../../node_modules/normalize.css/normalize"
+// @import "../../node_modules/slick-carousel/slick/slick"
+// @import "../../node_modules/magnific-popup/dist/magnific-popup"
+@import "variables.sass"
+@import "fonts"
+@import "mixins.sass"
+@import "scaffolding.sass"
+@import "blocks/top-navigation.sass"
+.ggbet {
+	color: red;
+	} 
+.ggbet__hh {
+	color: #000
+	}
+
+		
+
