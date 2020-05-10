@@ -1,0 +1,197 @@
+
+.top-navigation {
+	background-color: $bg-darkgrey;
+	&__container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 75px;
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+	}
+}
+
+.menu {
+	padding: 0 0 0 30px/950px*100%;
+	flex: 1 1 auto;
+	&__icon {
+	}
+
+	&__body {
+	}
+
+	&__site {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+		margin: 0 15px;
+	}
+
+	&__link {
+		font-family: "PFDin";
+		text-transform: uppercase;
+		letter-spacing: 1.4px;
+		color: #ffffff;
+	}
+}
+.icon-menu {
+
+	&__image {
+	}
+}
+.top_navigation {
+
+	&__actions {
+	}
+}
+.actions {
+	display: flex;
+	align-items: center;
+	&__region {
+		@extend .menu__link;
+		padding: 0 0 0 30px;
+		line-height: 18px;
+		background: url("../img/globe.png") left no-repeat;
+	}
+
+	&__user {
+		margin: 0 0 0 30px;
+	}
+}
+.user-header {
+
+	&__icon {
+		cursor: pointer;
+	}
+
+	&__menu {
+		margin: 0;
+		opacity: 0;
+		position: absolute;
+		visibility: hidden;
+		top: 88px;
+		right: 0;
+		background-color: $bg-darkgrey;
+		padding: 5px 20px 20px 20px;
+		transition: all 0.13s ease 0s;
+		&._active {
+			top: 78px;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&__item {
+		line-height: 25px;
+	}
+
+	&__link {
+		display: inline-block;
+		padding-left: 30px;
+		color: #fff;
+	}
+
+	&__link-1 {
+		background: url("../img/globe-icon.png") 1px no-repeat;
+	}
+
+	&__link-2 {
+		background: url("../img/key-icon.png") left no-repeat;
+	}
+
+	&__link-3 {
+		background: url("../img/palm-icon.png") 4px no-repeat;
+	}
+
+	&__link-4 {
+		background: url("../img/Lhammer-logo.png") left no-repeat;
+	}
+}
+
+@media (min-width: 992px) {
+
+.top-navigation {
+
+	&__container {
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+	}
+}
+
+.menu {
+
+	&__icon {
+	}
+
+	&__body {
+	}
+
+	&__site {
+	}
+
+	&__item {
+	}
+
+	&__link {
+		&:hover {
+			text-decoration: underline;
+	}
+	}
+}
+.icon-menu {
+
+	&__image {
+	}
+}
+.top_navigation {
+
+	&__actions {
+	}
+}
+.actions {
+
+	&__region {
+	}
+
+	&__user {
+	}
+}
+.user-header {
+
+	&__icon {
+	}
+
+	&__menu {
+	}
+
+	&__item {
+	}
+
+	&__link {
+		&:hover {
+			text-decoration: underline;
+	}
+	}
+	&__link-1 {
+	}
+
+	&__link-2 {
+	}
+
+	&__link-3 {
+	}
+
+	&__link-4 {
+	}
+}
+}
