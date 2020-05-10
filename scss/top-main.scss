@@ -1,0 +1,38 @@
+._top-main {
+	color: #fff;
+	background: url("../img/bg.jpg") center center no-repeat;
+	&__fat-text {
+		margin: 30px 0 5px 0;
+		font-size: 40px;
+		line-height: 25px;
+		color: #bb9c66;
+		font-family: ceremonious, Arial, sans-serif;
+		font-style: normal;
+		font-weight: 400;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		font-family: PFDin, Arial, sans-serif;
+		line-height: 35px;
+		font-size: 35px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-weight: 400;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 25px;
+		width: 690px;
+		text-align: center;
+	}
+
+	&__button {
+	}
+}
