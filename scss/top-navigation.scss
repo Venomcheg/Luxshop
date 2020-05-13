@@ -9,6 +9,7 @@
 	}
 
 	&__logo {
+		width: 144px;
 	}
 
 	&__menu {
@@ -51,6 +52,9 @@
 .top_navigation {
 
 	&__actions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 .actions {
@@ -68,9 +72,11 @@
 	}
 }
 .user-header {
-
 	&__icon {
 		cursor: pointer;
+		img {
+			padding-top: 5px;
+		}
 	}
 
 	&__menu {
@@ -122,31 +128,7 @@
 
 @media (max-width: 890px) {
 
-.top-navigation {
-
-	&__container {
-	}
-
-	&__logo {
-	}
-
-	&__menu {
-	}
-}
-
 .menu {
-
-	&__icon {
-	}
-
-	&__body {
-	}
-
-	&__site {
-	}
-
-	&__item {
-	}
 
 	&__link {
 		&:hover {
@@ -154,22 +136,14 @@
 	}
 	}
 }
-.icon-menu {
 
-	&__image {
-	}
-}
-.top_navigation {
-
-	&__actions {
-	}
-}
 .actions {
 
 	&__region {
 		padding: 0;
 		width: 18px;
 		height: 18px;
+		padding-right: 15px;
 	}
 
 	&__user {
@@ -181,33 +155,64 @@
 }
 .user-header {
 
-	&__icon {
-		img {
-			margin: auto;
-		}
-	}
-
-	&__menu {
-	}
-
-	&__item {
-	}
-
 	&__link {
 		&:hover {
 			text-decoration: none;
 	}
 	}
-	&__link-1 {
-	}
 
-	&__link-2 {
-	}
+}
+}
 
-	&__link-3 {
+@media (max-width: $md3) {
+.icon-menu {
+	margin-left: 10px;
+	position: relative;
+	width: 30px;
+	height: 18px;
+	cursor: pointer;
+	z-index: 5;
+	&__image {
+		top: calc(50% - 1px);
+		right: 0px;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		&-1{
+			top: 0px;
+		}
+		&-3 {
+			top: auto;
+			bottom: 0px;
+		}
 	}
-
-	&__link-4 {
+}
+.menu {
+	&__body{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		&:after {
+			content: "";
+			display: none;
+			background-color: $bg-darkgrey;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 75px;
+		}
+	}
+}
+.top-navigation {
+	&__logo {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
 }
