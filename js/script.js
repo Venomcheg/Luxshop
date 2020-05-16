@@ -67,9 +67,7 @@ if (iconMenu != null) {
 			menuBody.classList.toggle("_active");
 		}
 	});
-}
-
-;
+};
 
 function menu_close() {
 	var iconMenu = document.querySelector(".icon-menu");
