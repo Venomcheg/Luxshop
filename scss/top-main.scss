@@ -1,38 +1,120 @@
-._top-main {
-	color: #fff;
-	background: url("../img/bg.jpg") center center no-repeat;
-	&__fat-text {
-		margin: 30px 0 5px 0;
-		font-size: 40px;
-		line-height: 25px;
-		color: #bb9c66;
-		font-family: ceremonious, Arial, sans-serif;
-		font-style: normal;
-		font-weight: 400;
+.top-main-slider {
+
+	&__item {
+	}
+}
+.item-main-slider {
+	padding: 34px 0 100px 0;
+	position: relative;
+	text-align: center;
+	&__content {
+		position: relative;
+		z-index: 2;
 	}
 
 	&__container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	&__title {
-		font-family: PFDin, Arial, sans-serif;
-		line-height: 35px;
-		font-size: 35px;
-		text-transform: uppercase;
-		letter-spacing: 5px;
-		font-weight: 400;
 	}
 
 	&__text {
+		margin: 25px auto 0;
+		max-width: 700px;
+		color: #fff;
 		font-size: 15px;
-		line-height: 25px;
-		max-width: 690px;
-		text-align: center;
+		line-height: calc(25/15);
 	}
 
-	&__button {
+}
+.ibg {
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
 	}
 }
+._top-main {
+
+	&__button {
+		margin-top: 25px ;
+		&:hover {
+			.btn_wrap span {
+				&::after {
+					height: 100%;
+					transition: height 0.3s ease 0s;
+				}
+
+			}
+		}
+	}
+}
+.main-slider {
+	position: relative;
+	.swiper-wrapper {
+		align-items: stretch;
+	}
+	&__control {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		left: 50%;
+		bottom: 0px;
+		width: 70px;
+		height: 70px;
+		transform: translate(-50%, 50%);
+	
+	&::after {
+		content: "";
+		position: absolute;
+		background-color: #fff;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		transform: rotate(-45deg);
+	}
+}
+}
+.control-main-slider {
+
+	&__arrow {
+
+		&_prev {
+			background: url("../img/throw-side.png") 0 0 no-repeat;
+			width: 14px;
+			height: 24px;
+			z-index: 2;
+		}
+
+		&_next {
+			background: url("../img/throw-side.png") 0 0 no-repeat;
+			width: 14px;
+			height: 24px;
+			z-index: 2;
+			transform: rotate(180deg);
+		}
+	}
+
+	&__decor {
+		line-height: 0;
+		position: relative;
+		z-index: 2;
+		margin: 0 12px;
+		animation-name: slide-rotate;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}
+@keyframes slide-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
