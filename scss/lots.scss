@@ -1,0 +1,282 @@
+.lots {
+	text-align: center;
+	&__container {
+		padding: 90px 10px 65px 10px;
+	}
+	&__header {
+		margin-bottom: 15px;
+	}
+}
+.title {
+
+	&__item {
+	}
+
+	&__main {
+		&_regular {
+		}
+	}
+}
+.lots {
+
+	&__slider {
+	}
+}
+.slider-lots {
+	
+	&__body {
+		margin: 0 -50px 100px;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.swiper-wrapper {
+			align-items: stretch;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__slide {
+		padding: 0 50px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	&__item {
+	}
+}
+.lot {
+	position: relative;
+	height: 100%;
+	width: 250px;
+	&__image {
+		display: block;
+		position: relative;
+		margin-bottom: 20px;
+		padding: 0 0 100% 0;
+
+	}
+
+	&__time {
+		display: inline-flex;
+		flex-direction: column;
+
+		align-items: center;
+		position: absolute;
+
+		left: 50%;
+		bottom: 0;
+		width: 70px;
+		height: 70px;
+		font-size: 18px;
+		font-family: "PTSansNarrow-Regular", Arial, sans-serif;
+		color: #000;
+		transform: translate(-50%, 40%);
+		z-index: 5;
+		&::before {
+			content: "";
+			width: 11px;
+			height: 16px;
+			background: url("../img/sand-time.png") 0 0 no-repeat;
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			z-index: -1;
+			width: 70px;
+			height: 70px;
+			left: 0;
+			background-color: #fff;
+			transform: rotate(45deg);
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 10;
+		font-size: 21px;
+		line-height: calc(25/21);
+		text-transform: uppercase;
+		font-family: PFDin, Arial, sans-serif;
+		font-weight: 500;
+		margin: 0px 0px 27px/21px * 1em 0px;
+		flex: 1 1 auto;
+		&:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		} 
+	}
+
+	&__hands,
+	&__view {
+		position: relative;
+		width: 50px;
+		line-height: 18px;
+		border-bottom: 1px solid #c3a673;
+		margin-top: 30px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -25px;
+			left: 50%;
+			width: 26px;
+			height: 26px;
+			transform: translate(-50%);
+		}
+	}
+	&__price {
+		margin-bottom: 35px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__view {
+		&::before {
+			background: url("../img/eye.png") 0 0 no-repeat;
+		}
+	}
+
+	&__current {
+		position: relative;
+		display: flex;
+		white-space: nowrap;
+		flex-direction: column;
+		font-size: 14px;
+		width: 180px;
+		height: 99px;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			z-index: -1;
+			width: 70px;
+			height: 70px;
+			border: 1px solid #c3a673;
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+		&-bet {
+			display: inline-flex;
+			justify-content: center;
+			position: relative;
+			font-family: BravoRegular, Arial, sans-serif;
+			font-size: 50px;
+			margin: 14px 0 7px 0;
+		}
+	}
+
+	&__hands {
+		&::before{
+			background: url("../img/palm.png") 0 0 no-repeat;
+		}
+	}
+	&__btn {
+
+	}
+}
+.btn_wrap .lot__btn-black {
+	font-family: PFDin, Arial, sans-serif;
+	font-weight: 500;
+	letter-spacing: normal;
+	font-size: 21px;
+	color: #000;
+}
+.bet-lots {
+
+	&__view {
+	}
+
+	&__current {
+	}
+
+	&__hands {
+	}
+}
+.button {
+}
+
+.control-slider-lots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__arrow {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		span {
+			position: relative;
+			background: url("../img/arrow.png") 0 0 no-repeat;
+			width: 110px;
+			height: 35px;
+			flex: 0 0 108px;
+			overflow: hidden;
+
+		}
+		&::after {
+			content: "";
+
+			margin: 0 5px;
+			width: 10px;
+			height: 10px;
+			border: 1px solid #c3a673;
+			border-radius: 50%;
+		}
+		&:last-child {
+			flex-direction: row-reverse;
+			span {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+
+	&__link {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 20px;
+		flex: 0 0 100px;
+		height: 100px;
+		color: #000;
+		font-size: 21px;
+		line-height: 25px;
+		text-transform: uppercase;
+		font-weight: 500;
+		background: url("../img/ellipse.png") 0 0 no-repeat;
+	}
+}
+@media (max-width: $mw) {
+	.slider-lots {
+		&__body {
+			margin: 0px -15px 50px;
+		}
+		&__slide {
+			padding: 0 15px;
+		}
+	}
+	.lot{
+		&__current-bet {
+			font-size: 35px;
+	}
+	&__text {
+		font-size: 18px;
+	}
+}
+}
+@media ( max-width: 550px ) {
+	.control-slider-lots{
+		&__arrow {
+			justify-content: flex-end;
+			span {
+				flex: 0 0 50px;
+			}
+		
+		}}
+}

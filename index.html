@@ -2,23 +2,24 @@
 <html lang="ru">
 
 <head>
-	<meta name="viewport" content="width=device-width">
-	<meta charset="UTF-8">
 	<title>Luxtrader</title>
-	<link rel="stylesheet" href="css/swiper.min.css">
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
 	<link rel="stylesheet" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 </head>
 
 <body>
 	<div class="wrapper">
 		@@include("_top-navigation.html", {})
 	</div>
-	<main>
+	<main class="page">
 		@@include("_top-main.html", {})
+		@@include("_lots.html", {})
 	</main>
 	<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/app.js"></script>
 </body>
 
 </html>
