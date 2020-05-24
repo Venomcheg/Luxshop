@@ -140,6 +140,11 @@
 				right: -37px;
 				box-shadow: 17px -17px 0 2px #fff, 17px -17px 0 3px #bb9c66;
 			}
+			&-n {
+				&::after {
+				box-shadow: 17px -17px 0 2px #1c242a, 17px -17px 0 3px #bb9c66;			
+			}
+		}
 		}
 		&-next {
 			&::before {
@@ -149,7 +154,12 @@
 				box-shadow: -17px 17px 0 2px #fff, -17px 17px 0 3px #bb9c66;
 				left: -36px;
 			}
+			&-n {
+				&::after {
+				box-shadow: -17px 17px 0 2px #1c242a, -17px 17px 0 3px #bb9c66;			
+			}
 		}
+	}
 	}
 
 	&__icon {
