@@ -105,4 +105,41 @@ let lots_slider = new Swiper('.slider-lots__body', {
 
 	},
 
-});
+}
+
+);
+let news_swiper = new Swiper('.news-slider__list', {
+
+	effect: 'fade',
+	//autoplay: {
+	//delay: 3000,
+	//disableOnInteraction: false,
+	//},
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 800,
+	//touchRatio: 0,
+	//simulateTouch: true,
+	loop: true,
+	//preloadImages: false,
+	lazy: true,
+	// Dotts
+	//pagination: {
+	//	el: '.slider-quality__pagging',
+	//	clickable: true,
+	//},
+	// Arrows
+
+	navigation: {
+		nextEl: '.control-slider-news__circle',
+		prevEl: '',
+
+	},
+
+}
+
+);
