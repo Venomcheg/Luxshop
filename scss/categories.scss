@@ -10,6 +10,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-bottom: 85px;
+		
 		&-decor {
 			display: block;
 			position: relative;
@@ -200,4 +201,21 @@
 			}
 }
 }
+.categories {
+	margin: 10px;
+	&__container {
+	}
+
+	&__list {
+
+		margin-bottom: 30px;
+	}}
+	.text-categories {
+		padding-left: 0;
+		background: none !important;
+		::before {
+			display: none;
+			background: none !important;
+		}
+	}
 }

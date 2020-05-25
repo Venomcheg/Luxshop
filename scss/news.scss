@@ -142,3 +142,11 @@ padding: 64px 0 75px 0;
 		transform: rotate(360deg);
 	}
 }
+@media(max-width: $md3) {
+	.news-slider__item {
+		flex-direction: column;
+	}
+	.news-slider__body {
+		flex: 0 1 200px;
+	}
+}
